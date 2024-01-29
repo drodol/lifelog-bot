@@ -20,7 +20,8 @@ bot = Bot(TELEGRAM_TOKEN)
 def check_post():
     print("Checking post...")
 
-    # Send a GET request to the API
+    # Send a GET request to the API.
+    # Replace the author.id with your own author id, which you can find on your profile page
     response = requests.get(
         "https://strapi-lifelog.herokuapp.com/posts?author.id=91&_sort=id:DESC&_limit=1"
     )
